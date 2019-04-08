@@ -11,12 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModels\Home\" />
     <Folder Include="ViewModels\Beer\" />
+    <Folder Include="ViewModels\Home\" />
     <Folder Include="ViewModels\Whiskey\" />
-    <Folder Include="Views\Beer\" />
-    <Folder Include="Views\Whiskey\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
 
 </Project>

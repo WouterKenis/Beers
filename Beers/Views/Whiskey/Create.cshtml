@@ -1,0 +1,30 @@
+﻿@using Drinks.Models
+@model Whiskey
+
+@{
+    ViewBag.Title = "Add a new Whiskey to the list";
+}
+
+<h1>Create</h1>
+
+<form method="post">
+    <table>
+        <tr>
+            <td>
+                <label asp-for="Name"></label>
+                <input asp-for="Name" value="" />
+                <span asp-validation-for="Name"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label asp-for="Type"></label>
+                <select asp-for="Type" asp-items="@Html.GetEnumSelectList<WhiskeyType>()"></select>
+                <span asp-validation-for="Type"></span>
+            </td>
+        </tr>
+    </table>
+
+
+    <input type="submit" name="save" value="Save" />
+</form>

@@ -20,7 +20,7 @@ namespace Drinks.Controllers
 
         public IActionResult Index()
         {
-            var model = new HomeIndexViewModel();
+            var model = new BeerIndexViewModel();
 
             model.Beers = _beerData.GetAll();
 

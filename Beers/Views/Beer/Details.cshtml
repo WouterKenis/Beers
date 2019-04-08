@@ -1,0 +1,14 @@
+﻿@model Drinks.Models.Beer
+
+@{
+    ViewBag.Title = "Details of " + Model.Name;
+}
+
+<h1>@Model.Name</h1>
+<div>
+    Id: @Model.Id
+</div>
+<div>
+    Type: @Model.Type
+</div>
+<a asp-action="Index" asp-controller="Home">Home</a>

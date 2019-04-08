@@ -1,27 +1,7 @@
-﻿@model Drinks.ViewModels.HomeIndexViewModel
+﻿
+@{
+    ViewBag.Title = "Home page";
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <table>
-        @foreach (var beer in Model.Beers)
-        {
-            <tr>
-                <td>ID: @beer.Id</td>
-            </tr>
-            <tr>
-                <td>Name: @beer.Name</td>
-            </tr>
-            <tr>
-                <td>Type: @beer.Type</td>
-            </tr>
-            <tr>
-                <td><a asp-action="Details" asp-route-id="@beer.Id">Details</a></td>
-            </tr>
-        }
-    </table>
-    <a asp-action="Create">Add a beer to the list</a>
-</body>
-</html>
+<a asp-action="Index" asp-controller="Beer">Beers drinks</a>
+<a asp-action="Index" asp-controller="Whiskey">Whiskey drinks</a>

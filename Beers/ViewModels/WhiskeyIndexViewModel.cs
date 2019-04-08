@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Drinks.ViewModels
 {
-    public class HomeIndexViewModel
+    public class WhiskeyIndexViewModel
     {
-        public IEnumerable<Beer> Beers { get; set; }
+        public IEnumerable<Whiskey> Whiskies { get; set; }
     }
 }
